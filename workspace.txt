@@ -1,0 +1,23 @@
+Building an API for a Blog
+Note: do not forget middlewire
+
+Endpoints:
+1. GET /posts: Retrieve all blog posts (optionally with pagination or filtering parameters).
+2. GET /posts/:id: Retrieve a specific post by its unique identifier.
+3. POST /posts: Create a new blog post (requires authentication for security).
+4. PUT /posts/:id (authenticated): Update an existing blog post.
+5. DELETE /posts/:id (authenticated): Delete a blog post.
+6. GET /categories: Retrieve all available post categories (if applicable).
+7. GET /posts/category/:category: Retrieve posts belonging to a specific category (if applicable).
+8. GET /search?q=keyword: Implement a search functionality to find posts by keywords (more complex, requires text indexing).
+
+
+
+Schema for blog:
+1. title: String (required)
+2. content: Text (required)
+3. author (ID or username): String (required)
+4. publishDate: Date (required)
+5. categories: Array of strings (optional)
+6. excerpt: String (optional, a short summary)
+7. featuredImage: String (optional, URL or filename of a featured image)
